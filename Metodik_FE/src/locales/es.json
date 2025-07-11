@@ -1,0 +1,100 @@
+{
+  "hero": {
+    "title": "Gestión Profesional de Proyectos en Diversas Industrias",
+    "subtitle": "Optimización de procesos, liderazgo de equipos y entrega de resultados eficientes en TI, Construcción, Marketing, Finanzas y más.",
+    "button": "Contáctame"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "paragraph1": "Hola, soy <strong>{{name}}</strong>, Ingeniera Civil especializada en Gestión de Proyectos con pasión por impulsar la innovación y la eficiencia en diversas industrias.",
+    "paragraph2": "A lo largo de los años, he desarrollado amplia experiencia liderando proyectos complejos no solo en TI, sino también en campos como construcción, marketing, servicios financieros y educación. Me especializo en implementar automatización de procesos y entregar insights visuales basados en datos utilizando herramientas como Power BI y Power Apps. Mi objetivo es optimizar flujos de trabajo, mejorar la toma de decisiones y generar resultados medibles — independientemente de la industria.",
+    "paragraph3": "Fundé <strong>Metodika</strong> con la visión de ayudar a las empresas a optimizar sus procesos, mejorar la colaboración en equipo y lograr resultados medibles mediante metodologías estructuradas y efectivas de gestión de proyectos.",
+    "paragraph4": "Estoy comprometida con el aprendizaje continuo y mantenerme actualizada con las últimas tecnologías y tendencias del sector para brindar soluciones innovadoras adaptadas a las necesidades únicas de cada cliente."
+  },
+  "services": {
+    "title": "Servicios",
+    "items": {
+      "projectManagement": {
+        "title": "Gestión de Proyectos en Diversas Industrias",
+        "description": "Ofrezco soluciones personalizadas de gestión de proyectos para los sectores de TI, Construcción, Marketing, Consultoría Financiera y Educación. Garantizo la entrega a tiempo, dentro del presupuesto y alineada con los objetivos del negocio."
+      },
+      "automation": {
+        "title": "Automatización y Optimización de Procesos",
+        "description": "Diseño e implemento flujos de trabajo, automatizaciones y árboles de decisión que optimizan operaciones y reducen esfuerzos manuales, utilizando herramientas como Power BI, Power Apps y Power Automate."
+      },
+      "teamLeadership": {
+        "title": "Liderazgo y Colaboración de Equipos",
+        "description": "Gestiono equipos multidisciplinarios, coordino desarrolladores internos y externos, y fomento la comunicación clara entre los interesados para garantizar el éxito del proyecto."
+      },
+      "consulting": {
+        "title": "Consultoría Técnica e Integración",
+        "description": "Recomiendo soluciones tecnológicas e integro APIs, plataformas y herramientas que se ajustan a los requerimientos del proyecto, equilibrando la viabilidad técnica y los objetivos del negocio."
+      }
+    }
+  },
+  "carousel": {
+    "keywords": [
+      "AUTOMATIZACIÓN",
+      "SCRUM",
+      "POWER BI",
+      "TI",
+      "CONSTRUCCIÓN",
+      "MARKETING",
+      "EDUCACIÓN",
+      "INTEGRACIONES",
+      "OPTIMIZACIÓN",
+      "POWER APPS",
+      "REACT",
+      "GESTIÓN DE PROYECTOS",
+      "FLUJOS DE TRABAJO",
+      "CONSULTORÍA",
+      "FINANZAS"
+    ]
+  },
+  "testimonials": {
+    "title": "Testimonios",
+    "items": [
+      {
+        "name": "Cheryl Masters",
+        "role": "Directora de Operaciones",
+        "company": "Karita Education Services",
+        "feedback": "Catalina gestionó nuestros proyectos de TI con gran profesionalismo y entregó excelentes resultados a tiempo."
+      },
+      {
+        "name": "Pamela Contreras",
+        "role": "Account Manager",
+        "company": "Ogilvy Argentina",
+        "feedback": "Su liderazgo coordinando equipos multifuncionales fue clave para el éxito de nuestras campañas."
+      },
+      {
+        "name": "Gonzalo Lizano",
+        "role": "Analista Senior CI & Automatización",
+        "company": "KPMG KDN PMO LATAM",
+        "feedback": "La experiencia de Catalina en automatización mejoró considerablemente la eficiencia de nuestros procesos."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contacto",
+    "namePlaceholder": "Tu nombre",
+    "emailPlaceholder": "Tu correo electrónico",
+    "messagePlaceholder": "Tu mensaje",
+    "button": "Enviar",
+    "status": {
+      "sending": "Enviando...",
+      "success": "Mensaje enviado con éxito.",
+      "error": "Error al enviar el mensaje. Inténtalo de nuevo.",
+      "serverError": "No se pudo conectar con el servidor."
+    }
+  },
+  "socials": {
+    "title": "Encuéntrame en",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados",
+    "designed": "Diseñado y gestionado con pasión"
+  }
+}
+

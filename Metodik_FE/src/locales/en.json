@@ -1,0 +1,99 @@
+{
+  "hero": {
+    "title": "Professional Project Management Across Industries",
+    "subtitle": "Process optimization, team leadership, and delivering efficient results across IT, Construction, Marketing, Finance, and more.",
+    "button": "Contact Me"
+  },
+  "about": {
+    "title": "About Me",
+    "paragraph1": "Hello, I’m <strong>{{name}}</strong>, a Civil Engineer specialized in Project Management with a passion for driving innovation and efficiency across diverse industries.",
+    "paragraph2": "Over the years, I have developed extensive experience leading complex projects not only in IT, but also in fields like construction, marketing, financial services, and education. I specialize in implementing process automation and delivering data-driven visual insights using tools such as Power BI and Power Apps. My goal is to optimize workflows, improve decision-making, and drive measurable results — regardless of the industry.",
+    "paragraph3": "I founded <strong>{{name}}</strong> with the vision of helping companies optimize their processes, improve team collaboration, and achieve measurable results through structured and effective project management methodologies.",
+    "paragraph4": "I am committed to continuous learning and staying updated with the latest technologies and industry trends to provide innovative solutions tailored to each client’s unique needs."
+  },
+  "services": {
+    "title": "Services",
+    "items": {
+      "projectManagement": {
+        "title": "Project Management Across Industries",
+        "description": "Offering tailored project management solutions for IT, Construction, Marketing, Financial Consulting, and Education sectors. I ensure projects are delivered on time, within budget, and aligned with business objectives."
+      },
+      "automation": {
+        "title": "Process Automation and Optimization",
+        "description": "Designing and implementing workflows, automations, and decision trees that optimize operations and reduce manual effort, using tools like Power BI, Power Apps, and Power Automate."
+      },
+      "teamLeadership": {
+        "title": "Team Leadership and Collaboration",
+        "description": "Managing multidisciplinary teams, coordinating internal and external developers, and fostering clear communication among stakeholders to ensure project success."
+      },
+      "consulting": {
+        "title": "Technical Consulting and Integration",
+        "description": "Recommending technology solutions and integrating APIs, platforms, and tools that fit project requirements, balancing technical feasibility with business objectives."
+      }
+    }
+  },
+  "carousel": {
+    "keywords": [
+      "Automation",
+      "SCRUM",
+      "POWER BI",
+      "IT",
+      "CONSTRUCTION",
+      "MARKETING",
+      "EDUCATION",
+      "INTEGRATIONS",
+      "OPTIMIZATION",
+      "POWER APPS",
+      "REACT",
+      "PROJECT MANAGEMENT",
+      "WORKFLOWS",
+      "CONSULTING",
+      "FINANCE"
+    ]
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "items": [
+      {
+        "name": "Cheryl Masters",
+        "role": "Director of Operations",
+        "company": "Karita Education Services",
+        "feedback": "Catalina managed our IT projects with great professionalism and delivered excellent results on time."
+      },
+      {
+        "name": "Pamela Contreras",
+        "role": "Account Manager",
+        "company": "Ogilvy Argentina",
+        "feedback": "Her leadership in coordinating cross-functional teams was key to the success of our campaigns."
+      },
+      {
+        "name": "Gonzalo Lizano",
+        "role": "CI & Automation Sr. Analyst",
+        "company": "KPMG KDN PMO LATAM",
+        "feedback": "Catalina’s expertise in automation greatly improved our process efficiency."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "Your email",
+    "messagePlaceholder": "Your message",
+    "button": "Send",
+    "status": {
+      "sending": "Sending...",
+      "success": "Message sent successfully.",
+      "error": "Error sending the message. Please try again.",
+      "serverError": "Could not connect to the server."
+    }
+  },
+  "socials": {
+    "title": "Find me on",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "designed": "Designed & Managed with passion"
+  }
+}
