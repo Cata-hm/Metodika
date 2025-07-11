@@ -35,7 +35,7 @@ const About = () => {
             {t('about.paragraph2')}
           </p>
           <p className="text-lg text-[#2E3C5D] leading-relaxed mt-4">
-            <Trans i18nKey="about.paragraph3" values={{ name: 'Metodika' }} components={{ strong: <strong /> }} />
+            <Trans i18nKey="about.paragraph3" values={{ name: 'Methodika' }} components={{ strong: <strong /> }} />
           </p>
           <p className="text-lg text-[#2E3C5D] leading-relaxed mt-4">
             {t('about.paragraph4')}
