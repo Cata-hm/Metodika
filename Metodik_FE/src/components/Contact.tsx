@@ -47,7 +47,7 @@ const Contact = () => {
           initial={{ opacity: 0, rotate: -10 }}
           whileInView={{ opacity: 1, rotate: 0 }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
-          viewport={{ once: false, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.5 }}
         >
           {t('contact.title')}
         </motion.h3>
@@ -58,7 +58,7 @@ const Contact = () => {
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.3 }}
         >
           <input
             type="text"
