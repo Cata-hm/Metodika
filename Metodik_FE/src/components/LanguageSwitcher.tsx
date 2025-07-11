@@ -1,3 +1,5 @@
+// src/components/LanguageSwitcher.tsx
+// This component provides a button to switch between languages in the application.
 import { useTranslation } from 'react-i18next';
 
 const LanguageSwitcher = () => {

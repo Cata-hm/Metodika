@@ -1,3 +1,5 @@
+// src/components/Socials.tsx
+// This component displays social media links with icons and animations.
 import { useTranslation } from 'react-i18next';
 
 const Socials = () => {

@@ -1,3 +1,5 @@
+// src/components/About.tsx
+// This component displays information about the author and the project.
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Trans } from 'react-i18next';

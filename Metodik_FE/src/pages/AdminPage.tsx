@@ -1,4 +1,7 @@
+// src/pages/AdminPage.tsx
+// This page allows administrators to log in and view messages received from users.
 import { useEffect, useState } from 'react';
+import { API_BASE_URL } from '../config';
 
 type Contact = {
   name: string;
@@ -15,7 +18,7 @@ const AdminPage = () => {
 
   const fetchContacts = async (authToken: string) => {
     try {
-      const res = await fetch('http://localhost:5000/api/admin/contacts', {
+      const res = await fetch(`${API_BASE_URL}/api/admin/contacts`, {
         headers: {
           Authorization: `Bearer ${authToken}`,
         },

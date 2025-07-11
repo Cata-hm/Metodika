@@ -1,6 +1,9 @@
+// src/components/Contact.tsx
+// This component provides a contact form for users to reach out.
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import { API_BASE_URL } from '../config';
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -17,7 +20,7 @@ const Contact = () => {
     setStatus(t('contact.status.sending'));
 
     try {
-      const res = await fetch('http://localhost:5000/api/contact', {
+      const res = await fetch(`${API_BASE_URL}/api/contact`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),

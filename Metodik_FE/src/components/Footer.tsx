@@ -1,3 +1,5 @@
+// src/components/Footer.tsx
+// This component renders the footer of the application.
 import { useTranslation } from 'react-i18next';
 
 const Footer = () => {

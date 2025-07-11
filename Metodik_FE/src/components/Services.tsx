@@ -1,3 +1,5 @@
+// src/components/Services.tsx
+// This component displays a list of services offered by the application with animations.
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
@@ -15,7 +17,7 @@ const containerVariants = {
 
 const itemVariants = {
   hidden: { opacity: 0, scale: 0.8 },
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.6, ease: 'easeOut' } },
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.6, ease: "easeOut" } },
 };
 
 const Services = () => {

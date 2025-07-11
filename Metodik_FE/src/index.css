@@ -1,3 +1,6 @@
+/* src/index.css */
+/* This file contains global styles for the Metodika application, including Tailwind CSS imports and
+   custom styles for smooth scrolling and scrollbar hiding. */
 @import "tailwindcss";
 
 /* Opcional: animaciones suaves */

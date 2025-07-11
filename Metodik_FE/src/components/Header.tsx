@@ -1,3 +1,5 @@
+// src/components/Header.tsx
+// This component renders the header of the application with navigation links and language toggle.
 import { useTranslation } from 'react-i18next';
 
 const Header = () => {

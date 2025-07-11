@@ -1,3 +1,5 @@
+// src/components/Hero.tsx
+// This component displays the hero section of the application with a title, subtitle, and call-to
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { useTranslation } from 'react-i18next';

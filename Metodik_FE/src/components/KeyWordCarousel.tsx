@@ -1,3 +1,5 @@
+// src/components/KeyWordCarousel.tsx
+// This component displays a horizontal carousel of keywords with a smooth scrolling effect.
 import { useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 

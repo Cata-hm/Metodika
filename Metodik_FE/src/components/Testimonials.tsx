@@ -1,3 +1,5 @@
+// src/components/Testimonials.tsx
+// This component displays testimonials from users with animations and responsive design.
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
