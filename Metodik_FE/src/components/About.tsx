@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Trans } from 'react-i18next';
-import BRAND_NAME from '../config/constants';
+import { BRAND_NAME } from '../config/constants';
 
 
 const About = () => {

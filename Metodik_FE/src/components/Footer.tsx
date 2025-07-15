@@ -1,7 +1,7 @@
 // src/components/Footer.tsx
 // This component renders the footer of the application.
 import { useTranslation } from 'react-i18next';
-import BRAND_NAME from '../config/constants';
+import { BRAND_NAME } from '../config/constants';
 
 const Footer = () => {
   const { t } = useTranslation();

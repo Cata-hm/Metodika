@@ -2,7 +2,7 @@
 // This component renders the header of the Metodika application, including the logo, navigation links
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import BRAND_NAME from '../config/constants';
+import { BRAND_NAME } from '../config/constants';
 
 const Header = () => {
   const { t, i18n } = useTranslation();
