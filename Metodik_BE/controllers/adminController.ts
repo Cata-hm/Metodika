@@ -1,3 +1,5 @@
+// controllers/adminController.ts
+// This controller handles admin-related actions
 import { Request, Response } from 'express';
 import { db } from '../db/connect';
 

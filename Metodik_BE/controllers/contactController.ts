@@ -1,3 +1,5 @@
+// controllers/contactController.ts
+// This controller handles contact form submissions
 import { Router } from 'express';
 import nodemailer from 'nodemailer';
 import { db } from '../db/connect';

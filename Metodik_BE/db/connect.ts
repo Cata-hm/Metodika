@@ -1,3 +1,5 @@
+// Metodik_BE/db/connect.ts
+// This file establishes a connection to the MongoDB database
 import { MongoClient } from 'mongodb';
 
 const client = new MongoClient(process.env.MONGODB_URI as string);

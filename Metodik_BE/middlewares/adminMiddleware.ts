@@ -1,3 +1,5 @@
+// Metodik_BE/middlewares/adminMiddleware.ts
+// This middleware checks if the request is authorized for admin actions
 import { Request, Response, NextFunction } from 'express';
 
 export const authMiddleware = (req: Request, res: Response, next: NextFunction) => {
