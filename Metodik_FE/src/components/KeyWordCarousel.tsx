@@ -1,5 +1,6 @@
 // src/components/KeyWordCarousel.tsx
 // This component displays a horizontal carousel of keywords with a smooth automatic scrolling effect.
+
 import { useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 
@@ -31,15 +32,17 @@ const KeywordCarousel = () => {
         ref={containerRef}
         className="hide-scrollbar whitespace-nowrap flex space-x-0 px-6 overflow-x-scroll items-baseline"
       >
-        {[...keywords, ...keywords].map((keyword, index) => (
-          <div
-            key={index}
-            className="inline-flex items-center text-2xl sm:text-6xl py-6 md:text-6xl text-[#4A90E2] font-bold hover:scale-110 transition-transform duration-300 whitespace-nowrap"
-          >
-            <span>{keyword}</span>
-            {/* Punto con margen horizontal igual */}
-            <span className="mx-6 text-gray-300 select-none">•</span>
-          </div>
+        {[...keywords, ...keywords].map((keyword, index, arr) => (
+          <span key={index} className="inline-flex items-center">
+            <div
+              className="text-2xl sm:text-6xl py-6 md:text-6xl text-[#4A90E2] font-bold hover:scale-110 transition-transform duration-300 whitespace-nowrap"
+            >
+              {keyword}
+            </div>
+            {index < arr.length - 1 && (
+              <span className="mx-5 text-gray-300 select-none text-6xl">•</span>
+            )}
+          </span>
         ))}
       </div>
     </section>
