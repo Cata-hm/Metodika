@@ -1,3 +1,5 @@
+// Metodik_BE/server.ts
+// This file sets up the Express server and connects to the MongoDB database
 import dotenv from 'dotenv';
 dotenv.config();
 
