@@ -3,6 +3,8 @@
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Trans } from 'react-i18next';
+import BRAND_NAME from '../config/constants';
+
 
 const About = () => {
   const { t } = useTranslation();
@@ -35,7 +37,7 @@ const About = () => {
             {t('about.paragraph2')}
           </p>
           <p className="text-lg text-[#2E3C5D] leading-relaxed mt-4">
-            <Trans i18nKey="about.paragraph3" values={{ name: 'Methodika' }} components={{ strong: <strong /> }} />
+            <Trans i18nKey="about.paragraph3" values={{ name: BRAND_NAME }} components={{ strong: <strong /> }} />
           </p>
           <p className="text-lg text-[#2E3C5D] leading-relaxed mt-4">
             {t('about.paragraph4')}

@@ -2,6 +2,7 @@
 // This component renders the header of the Metodika application, including the logo, navigation links
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import BRAND_NAME from '../config/constants';
 
 const Header = () => {
   const { t, i18n } = useTranslation();
@@ -18,7 +19,7 @@ const Header = () => {
   return (
     <header className="bg-white shadow sticky top-0 z-50">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <h1 className="text-xl font-bold tracking-wide text-[#4A90E2]">Methodika</h1>
+        <h1 className="text-xl font-bold tracking-wide text-[#4A90E2]">{BRAND_NAME}</h1>
 
         {/* Menu desktop */}
         <nav className="hidden md:flex space-x-6 items-center">
