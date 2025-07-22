@@ -17,7 +17,7 @@ const Hero = () => {
   return (
     <section
       ref={ref}
-      className="bg-[#4A90E2] text-white text-center py-24 px-6"
+      className="bg-[#4A90E2] text-white text-center min-h-screen flex flex-col justify-center py-24 px-6"
     >
       <motion.h2
         className="text-4xl font-bold mb-4 drop-shadow-lg"
@@ -39,7 +39,7 @@ const Hero = () => {
       </motion.p>
       <motion.a
         href="#contact"
-        className="bg-white text-[#4A90E2] font-semibold px-6 py-3 rounded shadow hover:bg-blue-100 transition-colors duration-300 inline-block"
+        className="bg-white text-[#4A90E2] font-semibold px-6 py-3 rounded shadow hover:bg-blue-100 transition-colors duration-300 inline-block mx-auto"
         variants={variants}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}

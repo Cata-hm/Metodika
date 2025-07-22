@@ -27,7 +27,7 @@ const KeywordCarousel = () => {
   }, []);
 
   return (
-    <section className="bg-gradient-to-r from-[#E6F0FA] via-white to-[#E6F0FA] py-10 overflow-hidden">
+    <section className="py-10 my-10 overflow-hidden">
       <div
         ref={containerRef}
         className="hide-scrollbar whitespace-nowrap flex space-x-0 px-6 overflow-x-scroll items-baseline"
