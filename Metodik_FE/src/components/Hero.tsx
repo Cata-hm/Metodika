@@ -1,5 +1,5 @@
 // src/components/Hero.tsx
-// This component displays the hero section of the application with a title, subtitle, and call-to
+// This component renders the hero section of the Metodika application, including a title, subtitle, and call-to-action button
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
@@ -17,10 +17,10 @@ const Hero = () => {
   return (
     <section
       ref={ref}
-      className="bg-[#4A90E2] text-white text-center min-h-screen flex flex-col justify-center py-24 px-6"
+      className="bg-gradient-to-r from-purple-400 via-pink-500 to-blue-400 text-black text-center min-h-screen flex flex-col justify-center py-24 px-6"
     >
       <motion.h2
-        className="text-4xl font-bold mb-4 drop-shadow-lg"
+        className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 leading-tight drop-shadow-md"
         variants={variants}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
@@ -29,7 +29,7 @@ const Hero = () => {
         {t('hero.title')}
       </motion.h2>
       <motion.p
-        className="text-lg mb-6 max-w-xl mx-auto drop-shadow-md"
+        className="text-lg mb-10 max-w-3xl mx-auto drop-shadow-sm"
         variants={variants}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
@@ -39,17 +39,21 @@ const Hero = () => {
       </motion.p>
       <motion.a
         href="#contact"
-        className="bg-white text-[#4A90E2] font-semibold px-6 py-3 rounded shadow hover:bg-blue-100 transition-colors duration-300 inline-block mx-auto"
+        className="inline-block max-w-xs px-8 py-3 font-semibold border-2 border-transparent bg-black hover:brightness-110 transition duration-300 shadow-lg mx-auto text-center"
         variants={variants}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
         transition={{ duration: 0.8, ease: 'easeOut', delay: 0.4 }}
       >
-        {t('hero.button')}
+        <span
+          className="bg-gradient-to-r from-purple-400 via-pink-500 to-blue-400 bg-clip-text text-transparent"
+          style={{ WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}
+        >
+          {t('hero.button')}
+        </span>
       </motion.a>
     </section>
   );
 };
 
 export default Hero;
-

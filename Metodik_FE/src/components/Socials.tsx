@@ -6,17 +6,17 @@ const Socials = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="bg-white py-8 text-center">
-      <h4 className="text-xl font-semibold mb-6 text-[#4A90E2] drop-shadow-md">
+    <section className="bg-gradient py-8 text-center">
+      <h4 className="text-xl font-semibold mb-6 text-black">
         {t('socials.title')}
       </h4>
-      <div className="flex justify-center space-x-10">
+      <div className="flex flex-col items-center space-y-6 sm:flex-row sm:space-y-0 sm:space-x-10 justify-center">
         {/* LinkedIn */}
         <a
           href="https://www.linkedin.com/in/catalina-hernandez-mejia/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-[#4A90E2] hover:text-[#FF6F61] flex items-center transition-colors duration-300 font-medium text-lg"
+          className="text-black hover:text-[#FF6F61] flex items-center transition-colors duration-300 font-medium text-lg"
           aria-label="LinkedIn"
         >
           <svg
@@ -36,7 +36,7 @@ const Socials = () => {
           href="https://github.com/Cata-hm"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-gray-800 hover:text-[#FF6F61] flex items-center transition-colors duration-300 font-medium text-lg"
+          className="text-black hover:text-[#FF6F61] flex items-center transition-colors duration-300 font-medium text-lg"
           aria-label="GitHub"
         >
           <svg
@@ -56,7 +56,7 @@ const Socials = () => {
           href="https://www.instagram.com/metodical.pm?igsh=MnRteWZrZWFidTk3&utm_source=qr"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-pink-500 hover:text-[#FF6F61] flex items-center transition-colors duration-300 font-medium text-lg"
+          className="text-black hover:text-[#FF6F61] flex items-center transition-colors duration-300 font-medium text-lg"
           aria-label="Instagram"
         >
           <svg

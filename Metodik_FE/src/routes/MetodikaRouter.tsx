@@ -18,8 +18,8 @@ function MetodikaRouter() {
       <main>
         <Hero />
         <About />
-        <Services />
         <KeywordCarousel />
+        <Services />
         <Tools />
         {/* <Testimonials /> */}
         <Contact />

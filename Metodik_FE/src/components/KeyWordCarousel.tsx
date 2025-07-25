@@ -13,34 +13,39 @@ const KeywordCarousel = () => {
     const container = containerRef.current;
     if (!container) return;
 
-    const scrollSpeed = 2; // velocidad de desplazamiento, ajusta si querés más lento o rápido
+    const scrollSpeed = 2; // velocidad de desplazamiento
     const intervalId = setInterval(() => {
       container.scrollLeft += scrollSpeed;
 
-      // Si llegó al final, vuelve al inicio sin corte visual
       if (container.scrollLeft >= container.scrollWidth - container.clientWidth) {
         container.scrollLeft = 0;
       }
-    }, 20); // cada 20 ms
+    }, 20);
 
     return () => clearInterval(intervalId);
   }, []);
 
   return (
-    <section className="py-10 my-10 overflow-hidden">
+    <section className="py-10 overflow-hidden bg-black">
       <div
         ref={containerRef}
-        className="hide-scrollbar whitespace-nowrap flex space-x-0 px-6 overflow-x-scroll items-baseline"
+        className="hide-scrollbar whitespace-nowrap flex space-x-8 px-8 overflow-x-scroll items-baseline"
       >
         {[...keywords, ...keywords].map((keyword, index, arr) => (
-          <span key={index} className="inline-flex items-center">
+          <span key={index} className="inline-flex items-center cursor-default select-none">
             <div
-              className="text-2xl sm:text-6xl py-6 md:text-6xl text-[#4A90E2] font-bold hover:scale-110 transition-transform duration-300 whitespace-nowrap"
+              className="text-2xl sm:text-4xl font-extrabold whitespace-nowrap transition-transform duration-300 hover:scale-110"
+              style={{
+                background: 'linear-gradient(90deg, #a78bfa, #f472b6, #60a5fa)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                textShadow: '0 0 8px rgba(167, 140, 250, 0.7)',
+              }}
             >
               {keyword}
             </div>
             {index < arr.length - 1 && (
-              <span className="mx-5 text-gray-300 select-none text-6xl">•</span>
+              <span className="mx-6 text-gray-500 select-none text-5xl">•</span>
             )}
           </span>
         ))}

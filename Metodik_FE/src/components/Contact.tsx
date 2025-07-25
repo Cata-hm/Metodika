@@ -40,13 +40,16 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="bg-[#4A90E2] text-white py-16 px-6">
+    <section
+      id="contact"
+      className="py-16 px-6 bg-black text-white"
+    >
       <div className="max-w-3xl mx-auto text-center">
         <motion.h3
-          className="text-3xl font-bold mb-6 drop-shadow-lg"
-          initial={{ opacity: 0, rotate: -10 }}
+          className="text-3xl font-extrabold mb-8 tracking-wide bg-gradient-to-r from-purple-400 via-indigo-400 to-pink-400 bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(180,100,255,0.8)]"
+          initial={{ opacity: 0, rotate: -8 }}
           whileInView={{ opacity: 1, rotate: 0 }}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
+          transition={{ duration: 0.7, ease: 'easeOut' }}
           viewport={{ once: true, amount: 0.5 }}
         >
           {t('contact.title')}
@@ -54,7 +57,7 @@ const Contact = () => {
 
         <motion.form
           onSubmit={handleSubmit}
-          className="space-y-4 text-left"
+          className="space-y-6 text-left"
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -64,37 +67,51 @@ const Contact = () => {
             type="text"
             name="name"
             placeholder={t('contact.namePlaceholder')}
-            className="w-full p-3 rounded border border-white bg-transparent placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-white"
+            className="w-full p-4 rounded-lg border border-[#5A6B8A] bg-[#1E293B] placeholder-[#8CA0B3] text-white focus:outline-none focus:ring-2 focus:ring-purple-500 transition-shadow duration-300"
             value={formData.name}
             onChange={handleChange}
             required
+            autoComplete="name"
           />
           <input
             type="email"
             name="email"
             placeholder={t('contact.emailPlaceholder')}
-            className="w-full p-3 rounded border border-white bg-transparent placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-white"
+            className="w-full p-4 rounded-lg border border-[#5A6B8A] bg-[#1E293B] placeholder-[#8CA0B3] text-white focus:outline-none focus:ring-2 focus:ring-purple-500 transition-shadow duration-300"
             value={formData.email}
             onChange={handleChange}
             required
+            autoComplete="email"
           />
           <textarea
             name="message"
             placeholder={t('contact.messagePlaceholder')}
-            className="w-full p-3 rounded border border-white bg-transparent placeholder-white text-white h-32 resize-none focus:outline-none focus:ring-2 focus:ring-white"
+            className="w-full p-4 rounded-lg border border-[#5A6B8A] bg-[#1E293B] placeholder-[#8CA0B3] text-white h-36 resize-none focus:outline-none focus:ring-2 focus:ring-purple-500 transition-shadow duration-300"
             value={formData.message}
             onChange={handleChange}
             required
           />
           <button
             type="submit"
-            className="bg-white text-[#4A90E2] font-semibold px-6 py-3 rounded shadow hover:bg-blue-100 transition-colors duration-300 w-full"
+            className="w-full py-3 rounded-lg bg-gradient-to-r from-purple-500 via-indigo-600 to-pink-500 text-white font-semibold shadow-lg hover:brightness-110 transition duration-300"
           >
             {t('contact.button')}
           </button>
         </motion.form>
 
-        {status && <p className="mt-4 text-sm drop-shadow-md">{status}</p>}
+        {status && (
+          <p
+            className={`mt-6 text-center text-sm ${
+              status === t('contact.status.success')
+                ? 'text-green-400'
+                : status === t('contact.status.error') || status === t('contact.status.serverError')
+                ? 'text-red-400'
+                : 'text-yellow-300'
+            } drop-shadow-lg font-semibold`}
+          >
+            {status}
+          </p>
+        )}
       </div>
     </section>
   );

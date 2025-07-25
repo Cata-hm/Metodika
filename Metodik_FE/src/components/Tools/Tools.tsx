@@ -1,24 +1,25 @@
 // Metodik_FE/src/components/Tools/Tools.tsx
-// This component displays various tools used as project management, categorized by their functionalities.
-import { tools } from "./ToolsData";
-import ToolsCategory from "./ToolsCategory";
+// This component renders the tools section of the Metodika application, displaying various tools used in project management
+import ToolsCarousel from "./ToolsCarousel";
 import { useTranslation } from "react-i18next";
+import { tools } from "./ToolsData";
 
 const Tools = () => {
   const { t } = useTranslation();
+  const allToolsArray = Object.values(tools).flat();
 
   return (
-    <section className="py-12 bg-white text-[#4A90E2]">
-      <div className="max-w-6xl mx-auto px-4 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-8">
+    <section className="py-16 relative bg-black text-white">
+      <div className="max-w-6xl mx-auto px-6 text-center overflow-hidden">
+        <h2 className="text-4xl md:text-5xl font-extrabold mb-8 tracking-wide bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
           {t("tools.title")}
         </h2>
-        <p className="mb-12 text-lg opacity-70">
+        <p className="mb-12 text-lg max-w-3xl mx-auto opacity-70 leading-relaxed">
           {t("tools.subtitle")}
         </p>
-        {Object.entries(tools).map(([category, items], idx) => (
-          <ToolsCategory key={idx} category={category} items={items} />
-        ))}
+
+        {/* Carousel de herramientas */}
+        <ToolsCarousel tools={allToolsArray} />
       </div>
     </section>
   );

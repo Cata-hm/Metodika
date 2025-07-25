@@ -1,5 +1,18 @@
 /* src/App.css */
-/* This file contains global styles for the Metodika application, including layout and component styles. */
+/* Global styles for Metodika with dark theme and iridescent metallic highlights */
+
+:root {
+  --gradient-metal: linear-gradient(to right, #a78bfa, #f472b6, #60a5fa);
+  --bg-dark: #000000;
+  --text-metallic: #d1d5db;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-metallic);
+  font-family: 'Inter', sans-serif;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -7,19 +20,23 @@
   text-align: center;
 }
 
+/* Logo Styles */
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
-  transition: filter 300ms;
+  transition: filter 300ms, transform 300ms;
+  filter: drop-shadow(0 0 1em rgba(255, 255, 255, 0.2));
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #f472b6aa);
+  transform: scale(1.05);
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+/* Logo animation */
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -28,17 +45,70 @@
     transform: rotate(360deg);
   }
 }
-
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
 }
 
+/* Cards */
 .card {
   padding: 2em;
+  background-color: #111827; /* slightly lighter than black */
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(167, 139, 250, 0.2);
+  border: 1px solid transparent;
+  background-image: linear-gradient(#111827, #111827), var(--gradient-metal);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
 }
 
+/* Gradient text utility */
+.text-gradient {
+  background: linear-gradient(to right, #a78bfa, #f472b6, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Text gradient with clip utility */
+.text-gradient-clip {
+  background-image: linear-gradient(to right, #a78bfa, #f472b6, );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Border gradient utility */
+.border-gradient {
+  border: 2px solid;
+  border-image: linear-gradient(to right, #a78bfa, #f472b6, #60a5fa) 1;
+}
+
+/* Background gradient utility */
+.bg-gradient {
+  background-image: linear-gradient(to right, #8b5cf6, #ec4899, #3b82f6);
+}
+
+/* Button styling */
+.button-metal {
+  background: transparent;
+  border: 2px solid;
+  border-image: var(--gradient-metal) 1;
+  color: var(--text-metallic);
+  padding: 0.5em 1.5em;
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.button-metal:hover {
+  background-image: var(--gradient-metal);
+  color: #000;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Documentation link */
 .read-the-docs {
-  color: #888;
+  color: #aaa;
+  font-style: italic;
 }
