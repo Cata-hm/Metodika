@@ -1,5 +1,6 @@
 // Metodik_FE/src/components/Tools/ToolsCarousel.tsx
 // This component renders a carousel of tools used in the Metodika application, allowing users to scroll through various project management tools
+
 import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
@@ -26,29 +27,39 @@ const ToolsDoubleCarousel: React.FC<ToolsDoubleCarouselProps> = ({ tools }) => {
 
     const scrollSpeed = 1.5;
 
-    const topInterval = setInterval(() => {
-      topContainer.scrollLeft += scrollSpeed;
-      if (topContainer.scrollLeft >= topContainer.scrollWidth - topContainer.clientWidth) {
-        topContainer.scrollLeft = 0;
-      }
-    }, 20);
+    let topScroll = 0;
+    let bottomScroll = bottomContainer.scrollWidth - bottomContainer.clientWidth;
 
-    const bottomInterval = setInterval(() => {
-      bottomContainer.scrollLeft -= scrollSpeed;
-      if (bottomContainer.scrollLeft <= 0) {
-        bottomContainer.scrollLeft = bottomContainer.scrollWidth - bottomContainer.clientWidth;
-      }
-    }, 20);
+    let animationFrameId: number;
 
-    return () => {
-      clearInterval(topInterval);
-      clearInterval(bottomInterval);
+    const animate = () => {
+      if (topContainer) {
+        topScroll += scrollSpeed;
+        if (topScroll >= topContainer.scrollWidth - topContainer.clientWidth) {
+          topScroll = 0;
+        }
+        topContainer.scrollLeft = topScroll;
+      }
+
+      if (bottomContainer) {
+        bottomScroll -= scrollSpeed;
+        if (bottomScroll <= 0) {
+          bottomScroll = bottomContainer.scrollWidth - bottomContainer.clientWidth;
+        }
+        bottomContainer.scrollLeft = bottomScroll;
+      }
+
+      animationFrameId = requestAnimationFrame(animate);
     };
+
+    animate();
+
+    return () => cancelAnimationFrame(animationFrameId);
   }, []);
 
   return (
     <section className="py-12 space-y-10">
-      {/* Carrusel superior: scroll hacia la derecha */}
+      {/* Carrusel superior */}
       <div
         ref={topRef}
         className="hide-scrollbar flex space-x-10 overflow-x-auto px-6 py-6"
@@ -69,7 +80,7 @@ const ToolsDoubleCarousel: React.FC<ToolsDoubleCarouselProps> = ({ tools }) => {
         ))}
       </div>
 
-      {/* Carrusel inferior: scroll hacia la izquierda */}
+      {/* Carrusel inferior */}
       <div
         ref={bottomRef}
         className="hide-scrollbar flex space-x-10 overflow-x-auto px-6 py-6"
