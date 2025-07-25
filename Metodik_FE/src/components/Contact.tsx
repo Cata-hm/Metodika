@@ -46,7 +46,7 @@ const Contact = () => {
     >
       <div className="max-w-3xl mx-auto text-center">
         <motion.h3
-          className="text-3xl font-extrabold mb-8 tracking-wide bg-gradient-to-r from-purple-400 via-indigo-400 to-pink-400 bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(180,100,255,0.8)]"
+          className="text-4xl md:text-5xl font-extrabold mb-8 tracking-wide bg-gradient bg-clip-text text-transparent"
           initial={{ opacity: 0, rotate: -8 }}
           whileInView={{ opacity: 1, rotate: 0 }}
           transition={{ duration: 0.7, ease: 'easeOut' }}
@@ -93,7 +93,7 @@ const Contact = () => {
           />
           <button
             type="submit"
-            className="w-full py-3 rounded-lg bg-gradient-to-r from-purple-500 via-indigo-600 to-pink-500 text-white font-semibold shadow-lg hover:brightness-110 transition duration-300"
+            className="w-full py-3 rounded-lg bg-gradient font-semibold shadow-lg hover:brightness-110 transition duration-300"
           >
             {t('contact.button')}
           </button>
