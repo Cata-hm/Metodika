@@ -39,14 +39,14 @@ const Hero = () => {
       </motion.p>
       <motion.a
         href="#contact"
-        className="inline-block max-w-xs px-8 py-3 font-semibold border-2 border-transparent bg-black hover:brightness-110 transition duration-300 shadow-lg mx-auto text-center"
+        className="button-metal inline-block max-w-xs text-center"
         variants={variants}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
         transition={{ duration: 0.8, ease: 'easeOut', delay: 0.4 }}
       >
         <span
-          className="bg-gradient-to-r from-purple-400 via-pink-500 to-blue-400 bg-clip-text text-transparent"
+          className="bg-gradient"
           style={{ WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}
         >
           {t('hero.button')}

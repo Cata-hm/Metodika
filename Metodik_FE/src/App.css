@@ -207,25 +207,27 @@ body {
   background-image: linear-gradient(to right, #8b5cf6, #ec4899, #60a5fa);
 }
 
-/* Button styling */
+/* Button styling ---------------------------------------------------------*/
 .button-metal {
-  background: transparent;
-  border: 2px solid;
-  border-image: var(--gradient-metal) 1;
-  color: var(--text-metallic);
+  background-color: black; /* fondo negro inicial */
+  border: 2px solid black;
+  border-image: black 1; /* borde negro */
+  color: var(--text-metallic); /* texto claro */
   padding: 0.5em 1.5em;
   border-radius: 9999px;
   font-weight: 600;
   transition: all 0.3s ease;
 }
+
 .button-metal:hover {
-  color: #000;
-  background-image: var(--gradient-metal);
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-  border-radius: 0; /* cuadrado */
+  background-color: white; /* fondo blanco en hover */
+  color: black; /* texto negro en hover */
+  border-radius: 9999px; /* mantener bordes redondeados */
+  border-image: white 1; /* mantener borde blanco */
+  border-color: white;
 }
 
-/* Documentation link */
+/* Documentation link --------------------------------------------------------*/
 .read-the-docs {
   color: #aaa;
   font-style: italic;
