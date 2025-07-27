@@ -10,7 +10,7 @@ const About = () => {
   return (
     <section id="about" className="py-16 px-6 bg-black text-metallic">
       <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-10">
-        <div className=" rounded-full p-1 bg-gradient-to-r from-purple-400 via-pink-500 to-blue-400">
+        <div className=" rounded-full p-1 bg-gradient">
           <motion.img
             src="/images/profile.JPG"
             alt="Catalina Hernández"
@@ -28,7 +28,7 @@ const About = () => {
           transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
           className="flex flex-col"
         >
-          <h3 className="text-4xl md:text-5xl font-extrabold mb-8 tracking-wide bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+          <h3 className="text-4xl md:text-5xl font-extrabold mb-8 tracking-wide bg-gradient bg-clip-text text-transparent">
             {t('about.title')}
           </h3>
           <p className="text-lg leading-relaxed text-metallic">

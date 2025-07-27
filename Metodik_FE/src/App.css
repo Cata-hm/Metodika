@@ -2,7 +2,7 @@
 /* Global styles for Metodika with dark theme and iridescent metallic highlights */
 
 :root {
-  --gradient-metal: linear-gradient(to right, #a78bfa, #f472b6, #60a5fa);
+  --gradient-metal: linear-gradient(to right, #a78bfa, #ec4899, #60a5fa);
   --bg-dark: #000000;
   --text-metallic: #d1d5db;
 }
@@ -14,9 +14,9 @@ body {
 }
 
 #root {
-  max-width: 1280px;
+  /*max-width: 1280px;*/
   margin: 0 auto;
-  padding: 2rem;
+  /*padding: 2rem;*/
   text-align: center;
 }
 
@@ -63,24 +63,148 @@ body {
   background-clip: padding-box, border-box;
 }
 
-/* Gradient text utility */
-.text-gradient {
-  background: linear-gradient(to right, #a78bfa, #f472b6, #60a5fa);
+/* Gradient text utility without hover */
+.text-gradient-nohover {
+  background: linear-gradient(to right, #a78bfa, #ec4899, #60a5fa);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
 }
 
-/* Border gradient utility */
-.border-gradient {
-  border: 2px solid;
-  border-image: linear-gradient(to right, #a78bfa, #f472b6, #60a5fa) 1;
+/* Gradient text utility */
+.text-gradient {
+  background: linear-gradient(to right, #a78bfa, #ec4899, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
-/* Background gradient utility */
+.text-gradient:hover {
+  background: none !important;
+  -webkit-background-clip: initial !important;
+  -webkit-text-fill-color: white !important;
+  color: white !important;
+}
+
+.text-gradient-black {
+  background: linear-gradient(to right, #a78bfa, #ec4899, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-gradient-black:hover {
+  background: none !important;
+  -webkit-background-clip: initial !important;
+  -webkit-text-fill-color: black !important;
+  color: black !important;
+}
+
+/* Borde negro ---------------------------------------*/
+.border-black {
+  position: relative;
+  border-radius: 9999px;
+  padding: 0.5em 1.5em;
+  font-weight: 600;
+  cursor: pointer;
+  background: transparent;
+  color: transparent; /* texto transparente para gradiente */
+  background-image: var(--gradient-metal);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease;
+  z-index: 0;
+}
+
+.border-black::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  padding: 2px; /* grosor del borde */
+  background: var(--gradient-metal);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+
+.border-black:hover {
+  color: black; /* texto negro en hover */
+  background-image: none;
+  -webkit-text-fill-color: initial;
+  background-clip: initial;
+  -webkit-background-clip: initial;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: black; /* fondo negro en hover */
+}
+
+.border-black:hover::before {
+  background: black; /* borde negro al hacer hover */
+}
+
+
+/* Border gradient utility ------------------------------------------------*/
+.border-gradient {
+  position: relative;
+  border-radius: 9999px;
+  padding: 0.5em 1.5em;
+  font-weight: 600;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: transparent; /* texto transparente para gradiente */
+  background-image: var(--gradient-metal);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease;
+  z-index: 0;
+}
+
+.border-gradient::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  padding: 2px; /* grosor del borde */
+  background: var(--gradient-metal);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+
+.border-gradient:hover {
+  color: white; /* texto blanco en hover */
+  background-image: none;
+  -webkit-text-fill-color: initial;
+  background-clip: initial;
+  -webkit-background-clip: initial;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  background-color: white; /* fondo en hover */
+}
+
+.border-gradient:hover::before {
+  background: white; /* ocultamos borde gradiente al hacer hover */
+}
+
+
+/* Background gradient utility --------------------------------------------*/
 .bg-gradient {
-  background-image: linear-gradient(to right, #8b5cf6, #ec4899, #3b82f6);
+  background-image: linear-gradient(to right, #8b5cf6, #ec4899, #60a5fa);
 }
 
 /* Button styling */
@@ -95,9 +219,10 @@ body {
   transition: all 0.3s ease;
 }
 .button-metal:hover {
-  background-image: var(--gradient-metal);
   color: #000;
+  background-image: var(--gradient-metal);
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  border-radius: 0; /* cuadrado */
 }
 
 /* Documentation link */

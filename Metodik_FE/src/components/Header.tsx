@@ -1,12 +1,13 @@
 // Metodik_FE/src/components/Header.tsx
 // This component renders the header of the Metodika application, including the logo, navigation links
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { BRAND_NAME } from '../config/constants';
 
 const Header = () => {
   const { t, i18n } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleLanguage = () => {
     i18n.changeLanguage(i18n.language === 'en' ? 'es' : 'en');
@@ -16,28 +17,52 @@ const Header = () => {
     setMenuOpen((prev) => !prev);
   };
 
+  // 🧠 Scroll effect to detect if page is scrolled
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10); // Cambia a blanco si baja más de 10px
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <header className="bg-black shadow sticky top-0 z-50">
+    <header
+      className={`sticky top-0 z-50 shadow transition-colors duration-300 ${
+        isScrolled ? 'bg-white' : 'bg-black'
+      }`}
+    >
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        {/* Brand name with gradient text */}
-        <h1 className="text-xl font-bold tracking-wide text-gradient">
+        {/* Brand name */}
+        <h1 className="text-xl font-bold tracking-wide text-gradient-nohover">
           {BRAND_NAME}
         </h1>
 
         {/* Desktop menu */}
         <nav className="hidden md:flex space-x-6 items-center">
-          <a href="#about" className="text-gradient hover:text-white transition">
+          <a href="#about" className={`transition ${
+      isScrolled ? 'text-gradient-black' : 'text-gradient'
+    }`}>
             {t('about.title')}
           </a>
-          <a href="#services" className="text-gradient hover:text-white transition">
+          <a href="#services" className={`transition ${
+      isScrolled ? 'text-gradient-black' : 'text-gradient'
+    }`}>
             {t('services.title')}
           </a>
-          <a href="#contact" className="text-gradient hover:text-white transition">
+          <a href="#contact" className={`transition ${
+      isScrolled ? 'text-gradient-black' : 'text-gradient'
+    }`}>
             {t('contact.title')}
           </a>
           <button
             onClick={toggleLanguage}
-            className="ml-4 px-3 py-1 rounded text-sm text-gradient border-gradient border transition hover:bg-white hover:text-black"
+            className={`ml-4 px-3 py-1 rounded text-sm transition ${
+    isScrolled
+      ? 'text-gradient-black border-black'
+      : 'text-gradient border-gradient'
+  }`}
           >
             {i18n.language === 'en' ? 'ES' : 'EN'}
           </button>

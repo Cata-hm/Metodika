@@ -17,7 +17,7 @@ const Hero = () => {
   return (
     <section
       ref={ref}
-      className="bg-gradient-to-r from-purple-400 via-pink-500 to-blue-400 text-black text-center min-h-screen flex flex-col justify-center py-24 px-6"
+      className="w-full bg-gradient text-black min-h-screen flex flex-col justify-center items-center text-center py-24 px-6"
     >
       <motion.h2
         className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 leading-tight drop-shadow-md"
