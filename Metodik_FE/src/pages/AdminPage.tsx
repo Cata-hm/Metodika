@@ -74,11 +74,11 @@ const AdminPage = () => {
         </form>
       ) : (
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl font-bold mb-6">Mensajes recibidos</h2>
+          <h2 className="text-black text-2xl font-bold mb-6">Mensajes recibidos</h2>
           {contacts.length === 0 ? (
             <p className="text-gray-600">No hay mensajes aún.</p>
           ) : (
-            <table className="w-full bg-white shadow rounded overflow-hidden">
+            <table className="w-full bg-white shadow rounded overflow-hidden text-black">
               <thead className="bg-gray-200 text-left">
                 <tr>
                   <th className="p-3">Nombre</th>

@@ -66,8 +66,6 @@ body {
 /* Gradient text utility without hover */
 .text-gradient-nohover {
   background: linear-gradient(to right, #a78bfa, #ec4899, #60a5fa);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
 }
@@ -75,8 +73,6 @@ body {
 /* Gradient text utility */
 .text-gradient {
   background: linear-gradient(to right, #a78bfa, #ec4899, #60a5fa);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
 }
@@ -188,17 +184,17 @@ body {
 }
 
 .border-gradient:hover {
-  color: white; /* texto blanco en hover */
+  color: rgb(245, 245, 245); /* texto blanco en hover */
   background-image: none;
   -webkit-text-fill-color: initial;
   background-clip: initial;
   -webkit-background-clip: initial;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-  background-color: white; /* fondo en hover */
+  background-color: rgb(245, 245, 245); /* fondo en hover */
 }
 
 .border-gradient:hover::before {
-  background: white; /* ocultamos borde gradiente al hacer hover */
+  background: rgb(245, 245, 245); /* ocultamos borde gradiente al hacer hover */
 }
 
 
@@ -220,11 +216,11 @@ body {
 }
 
 .button-metal:hover {
-  background-color: white; /* fondo blanco en hover */
+  background-color: rgb(245, 245, 245); /* fondo blanco en hover */
   color: black; /* texto negro en hover */
   border-radius: 9999px; /* mantener bordes redondeados */
-  border-image: white 1; /* mantener borde blanco */
-  border-color: white;
+  border-image: rgb(245, 245, 245) 1; /* mantener borde blanco */
+  border-color: rgb(245, 245, 245);
 }
 
 /* Documentation link --------------------------------------------------------*/

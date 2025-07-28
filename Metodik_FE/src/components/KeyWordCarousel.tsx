@@ -26,7 +26,7 @@ const KeywordCarousel = () => {
   }, []);
 
   return (
-    <section className="py-10 overflow-hidden bg-black">
+    <section className="py-10 overflow-hidden bg-gray-100">
       <div
         ref={containerRef}
         className="hide-scrollbar whitespace-nowrap flex space-x-8 px-8 overflow-x-scroll items-baseline"

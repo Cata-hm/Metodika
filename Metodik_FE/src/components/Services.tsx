@@ -51,7 +51,7 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="bg-black py-24 px-6 text-white"
+      className="bg-gray-100 py-24 px-6 text-white"
     >
       <div className="max-w-6xl mx-auto text-center">
         <h3 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-blue-400 mb-16 tracking-tight">

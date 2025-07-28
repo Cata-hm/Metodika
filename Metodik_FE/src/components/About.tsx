@@ -8,7 +8,7 @@ const About = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="about" className="py-16 px-6 bg-black text-metallic">
+    <section id="about" className="py-16 px-6 bg-gray-100 text-black">
       <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-10">
         <div className=" rounded-full p-1 bg-gradient">
           <motion.img

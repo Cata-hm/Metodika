@@ -30,7 +30,7 @@ const Header = () => {
   return (
     <header
       className={`sticky top-0 z-50 shadow transition-colors duration-300 ${
-        isScrolled ? 'bg-white' : 'bg-black'
+        isScrolled ? 'bg-gray-100' : 'bg-black'
       }`}
     >
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
@@ -62,8 +62,7 @@ const Header = () => {
     isScrolled
       ? 'text-gradient-black border-black'
       : 'text-gradient border-gradient'
-  }`}
-          >
+  }`}>
             {i18n.language === 'en' ? 'ES' : 'EN'}
           </button>
         </nav>

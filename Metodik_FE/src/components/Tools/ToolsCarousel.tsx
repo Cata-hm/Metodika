@@ -58,18 +58,22 @@ const ToolsDoubleCarousel: React.FC<ToolsDoubleCarouselProps> = ({ tools }) => {
   }, []);
 
   return (
-    <section className="py-12 space-y-10">
+    <section className="w-screen overflow-hidden py-3 space-y-6">
       {/* Carrusel superior */}
       <div
         ref={topRef}
-        className="hide-scrollbar flex space-x-10 overflow-x-auto px-6 py-6"
+        className="w-screen hide-scrollbar flex space-x-10 overflow-x-auto px-6 py-6"
         style={{ scrollBehavior: "smooth", minHeight: "140px" }}
       >
         {[...tools, ...tools].map((tool, idx) => (
           <motion.div
             key={`top-${idx}`}
-            className="flex flex-col items-center justify-center bg-[#1E293B] bg-opacity-80 backdrop-blur-md rounded-xl shadow-[0_0_15px_rgba(74,144,226,0.8)] cursor-pointer p-4 min-w-[140px] text-[#4A90E2]"
-            whileHover={{ scale: 1.2, boxShadow: "0 0 20px rgba(74, 144, 226, 0.8)" }}
+            className="flex flex-col items-center justify-center bg-black bg-opacity-80 backdrop-blur-md rounded-xl shadow-[0_0_15px_rgba(74,144,226,0.8)] cursor-pointer p-4 min-w-[140px] text-gradient-nohover"
+            whileHover={{ 
+            scale: 1.2, 
+            boxShadow: "0 0 20px rgba(74, 144, 226, 0.8)", 
+            backgroundColor: "#F1F5F9" 
+          }}
             transition={{ type: "spring", stiffness: 150, damping: 12 }}
           >
             <div className="text-5xl mb-1 drop-shadow-md">{tool.icon}</div>
@@ -83,14 +87,18 @@ const ToolsDoubleCarousel: React.FC<ToolsDoubleCarouselProps> = ({ tools }) => {
       {/* Carrusel inferior */}
       <div
         ref={bottomRef}
-        className="hide-scrollbar flex space-x-10 overflow-x-auto px-6 py-6"
+        className="w-screen hide-scrollbar flex space-x-10 overflow-x-auto px-6 py-6"
         style={{ scrollBehavior: "smooth", minHeight: "140px" }}
       >
         {[...tools, ...tools].map((tool, idx) => (
           <motion.div
             key={`bottom-${idx}`}
-            className="flex flex-col items-center justify-center bg-[#1E293B] bg-opacity-80 backdrop-blur-md rounded-xl shadow-[0_0_15px_rgba(74,144,226,0.8)] cursor-pointer p-4 min-w-[140px] text-[#4A90E2]"
-            whileHover={{ scale: 1.2, boxShadow: "0 0 20px rgba(74, 144, 226, 0.8)" }}
+            className="flex flex-col items-center justify-center bg-black bg-opacity-80 backdrop-blur-md rounded-xl shadow-[0_0_15px_rgba(74,144,226,0.8)] cursor-pointer p-4 min-w-[140px] text-gradient-nohover"
+            whileHover={{ 
+            scale: 1.2, 
+            boxShadow: "0 0 20px rgba(74, 144, 226, 0.8)", 
+            backgroundColor: "#F1F5F9" 
+          }}
             transition={{ type: "spring", stiffness: 150, damping: 12 }}
           >
             <div className="text-5xl mb-1 drop-shadow-md">{tool.icon}</div>
