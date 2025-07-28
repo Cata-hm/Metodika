@@ -58,7 +58,7 @@ const Header = () => {
           </a>
           <button
             onClick={toggleLanguage}
-            className={`ml-4 px-3 py-1 rounded text-sm transition ${
+            className={`ml-4 px-3 py-1 rounded-lg text-sm transition ${
     isScrolled
       ? 'text-gradient-black border-black'
       : 'text-gradient border-gradient'
@@ -69,7 +69,7 @@ const Header = () => {
 
         {/* Mobile hamburger icon */}
         <button
-          className="md:hidden flex flex-col justify-center items-center gap-1"
+          className="md:hidden flex flex-col rounded-lg justify-center items-center gap-1"
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >

@@ -16,7 +16,7 @@ const Socials = () => {
           href="https://www.linkedin.com/in/catalina-hernandez-mejia/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-black hover:text-[#FF6F61] flex items-center transition-colors duration-300 font-medium text-lg"
+          className="text-black hover:text-gray-100 flex items-center transition-colors duration-300 font-medium text-lg"
           aria-label="LinkedIn"
         >
           <svg
@@ -36,7 +36,7 @@ const Socials = () => {
           href="https://github.com/Cata-hm"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-black hover:text-[#FF6F61] flex items-center transition-colors duration-300 font-medium text-lg"
+          className="text-black hover:text-gray-100 flex items-center transition-colors duration-300 font-medium text-lg"
           aria-label="GitHub"
         >
           <svg
@@ -56,7 +56,7 @@ const Socials = () => {
           href="https://www.instagram.com/metodical.pm?igsh=MnRteWZrZWFidTk3&utm_source=qr"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-black hover:text-[#FF6F61] flex items-center transition-colors duration-300 font-medium text-lg"
+          className="text-black hover:text-gray-100 flex items-center transition-colors duration-300 font-medium text-lg"
           aria-label="Instagram"
         >
           <svg

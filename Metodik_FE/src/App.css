@@ -102,7 +102,7 @@ body {
 /* Borde negro ---------------------------------------*/
 .border-black {
   position: relative;
-  border-radius: 9999px;
+  border-radius: 0.5rem;
   padding: 0.5em 1.5em;
   font-weight: 600;
   cursor: pointer;
@@ -120,7 +120,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: 9999px;
+  border-radius: 0.5rem;
   padding: 2px; /* grosor del borde */
   background: var(--gradient-metal);
   -webkit-mask:
@@ -151,7 +151,7 @@ body {
 /* Border gradient utility ------------------------------------------------*/
 .border-gradient {
   position: relative;
-  border-radius: 9999px;
+  border-radius: 0.5rem;
   padding: 0.5em 1.5em;
   font-weight: 600;
   cursor: pointer;
@@ -170,7 +170,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: 9999px;
+  border-radius: 0.5rem;
   padding: 2px; /* grosor del borde */
   background: var(--gradient-metal);
   -webkit-mask:
@@ -210,7 +210,7 @@ body {
   border-image: black 1; /* borde negro */
   color: var(--text-metallic); /* texto claro */
   padding: 0.5em 1.5em;
-  border-radius: 9999px;
+  border-radius:  0.5rem;
   font-weight: 600;
   transition: all 0.3s ease;
 }
@@ -218,7 +218,7 @@ body {
 .button-metal:hover {
   background-color: rgb(245, 245, 245); /* fondo blanco en hover */
   color: black; /* texto negro en hover */
-  border-radius: 9999px; /* mantener bordes redondeados */
+  border-radius:  0.5rem; /* mantener bordes redondeados */
   border-image: rgb(245, 245, 245) 1; /* mantener borde blanco */
   border-color: rgb(245, 245, 245);
 }

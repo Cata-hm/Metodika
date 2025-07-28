@@ -93,7 +93,7 @@ const Contact = () => {
           />
           <button
             type="submit"
-            className="w-full py-3 rounded-lg bg-gradient font-semibold shadow-lg hover:brightness-110 transition duration-300"
+            className="w-full py-3 rounded-lg bg-gradient-to-r from-purple-400 via-pink-500 to-blue-400 text-white font-semibold shadow-lg transition duration-300 hover:bg-gray-100 hover:text-black hover:bg-none cursor-pointer"
           >
             {t('contact.button')}
           </button>
