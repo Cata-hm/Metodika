@@ -45,6 +45,22 @@ const About = () => {
           <p className="text-lg leading-relaxed mt-4 text-metallic text-justify">
             {t('about.paragraph4')}
           </p>
+          {/* Aquí armamos el párrafo 5 y 6 junto, porque en tu JSON están separados y quieres un solo párrafo con link */}
+          <p className="text-lg leading-relaxed mt-4 text-metallic text-justify">
+            {t('about.paragraph5')}{' '}
+            <a
+              href="https://www.linkedin.com/in/catalina-hernandez-mejia"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Trans
+                i18nKey="about.paragraph6"
+                values={{ name: 'LinkedIn' }}
+                components={{ strong: <strong className="font-semibold text-gradient-nohover"/> }}
+              />
+            </a>
+            .
+          </p>
         </motion.div>
       </div>
     </section>

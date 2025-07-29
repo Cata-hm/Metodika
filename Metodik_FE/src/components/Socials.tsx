@@ -13,7 +13,7 @@ const Socials = () => {
       <div className="flex flex-col items-center space-y-6 sm:flex-row sm:space-y-0 sm:space-x-10 justify-center">
         {/* LinkedIn */}
         <a
-          href="https://www.linkedin.com/in/catalina-hernandez-mejia/"
+          href="https://www.linkedin.com/company/metodical"
           target="_blank"
           rel="noopener noreferrer"
           className="text-black hover:text-gray-100 flex items-center transition-colors duration-300 font-medium text-lg"

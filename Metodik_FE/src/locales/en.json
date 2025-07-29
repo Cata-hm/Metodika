@@ -9,7 +9,9 @@
     "paragraph1": "Hello, I’m <strong>{{name}}</strong>, a Civil Engineer specialized in Project Management with a passion for driving innovation and efficiency across diverse industries.",
     "paragraph2": "Over the years, I have developed extensive experience leading complex projects not only in construction, but also in fields like IT, marketing, financial services, and education. I specialize in implementing process automation and delivering data-driven visual insights using tools such as Power BI and Power Apps. My goal is to optimize workflows, improve decision-making, and drive measurable results — regardless of the industry.",
     "paragraph3": "I founded <strong>{{name}}</strong> with the vision of helping companies optimize their processes, improve team collaboration, and achieve measurable results through structured and effective project management methodologies.",
-    "paragraph4": "I am committed to continuous learning and staying updated with the latest technologies and industry trends to provide innovative solutions tailored to each client’s unique needs."
+    "paragraph4": "I am committed to continuous learning and staying updated with the latest technologies and industry trends to provide innovative solutions tailored to each client’s unique needs.",
+    "paragraph5": "Learn more about me on",
+    "paragraph6": "my <strong>{{name}}</strong> profile"
   },
   "services": {
     "title": "Services",

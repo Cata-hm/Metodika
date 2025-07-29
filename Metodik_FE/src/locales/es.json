@@ -9,7 +9,9 @@
     "paragraph1": "Hola, soy <strong>{{name}}</strong>, Ingeniera Civil especializada en Gestión de Proyectos con pasión por impulsar la innovación y la eficiencia en diversas industrias.",
     "paragraph2": "A lo largo de los años, he desarrollado amplia experiencia liderando proyectos complejos no solo en construcción, sino también en campos como TI, marketing, servicios financieros y educación. Me especializo en implementar automatización de procesos y entregar insights visuales basados en datos utilizando herramientas como Power BI y Power Apps. Mi objetivo es optimizar flujos de trabajo, mejorar la toma de decisiones y generar resultados medibles, independientemente de la industria.",
     "paragraph3": "Fundé <strong>{{name}}</strong> con la visión de ayudar a las empresas a optimizar sus procesos, mejorar la colaboración en equipo y lograr resultados medibles mediante metodologías estructuradas y efectivas de gestión de proyectos.",
-    "paragraph4": "Estoy comprometida con el aprendizaje continuo y mantenerme actualizada con las últimas tecnologías y tendencias del sector para brindar soluciones innovadoras adaptadas a las necesidades únicas de cada cliente."
+    "paragraph4": "Estoy comprometida con el aprendizaje continuo y mantenerme actualizada con las últimas tecnologías y tendencias del sector para brindar soluciones innovadoras adaptadas a las necesidades únicas de cada cliente.",
+    "paragraph5": "Conoce más sobre mí en",
+    "paragraph6": "mi perfil de <strong>{{name}}</strong>"
   },
   "services": {
     "title": "Servicios",
