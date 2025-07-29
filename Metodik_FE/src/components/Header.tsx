@@ -96,24 +96,25 @@ const Header = () => {
 
       {/* Mobile dropdown menu */}
       {menuOpen && (
-        <nav className="absolute top-16 left-0 w-full md:hidden bg-black shadow-md px-6 pb-4 flex flex-col space-y-4 z-50">
+        <nav className={`absolute top-16 left-0 w-full md:hidden shadow-md px-6 pb-4 flex flex-col space-y-4 z-50 
+          ${isScrolled ? 'bg-gray-100' : 'bg-black'}`}>
           <a
             href="#about"
-            className="text-gradient hover:text-white"
+            className={`transition ${isScrolled ? 'text-gradient-black' : 'text-gradient'}`}
             onClick={() => setMenuOpen(false)}
           >
             {t('about.title')}
           </a>
           <a
             href="#services"
-            className="text-gradient hover:text-white"
+            className={`transition ${isScrolled ? 'text-gradient-black' : 'text-gradient'}`}
             onClick={() => setMenuOpen(false)}
           >
             {t('services.title')}
           </a>
           <a
             href="#contact"
-            className="text-gradient hover:text-white"
+            className={`transition ${isScrolled ? 'text-gradient-black' : 'text-gradient'}`}
             onClick={() => setMenuOpen(false)}
           >
             {t('contact.title')}
@@ -123,7 +124,9 @@ const Header = () => {
               toggleLanguage();
               setMenuOpen(false);
             }}
-            className="self-center px-3 py-1 border rounded text-sm text-gradient border-gradient hover:bg-gradient-to-r from-purple-500 via-pink-500 to-blue-400 hover:text-white transition"
+            className={`self-center px-3 py-1 text-sm
+        ${isScrolled ? 'text-gradient-black border-black' : 'text-gradient border-gradient'}
+        transition`}
           >
             {i18n.language === 'en' ? 'ES' : 'EN'}
           </button>
