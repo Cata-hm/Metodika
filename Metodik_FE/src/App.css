@@ -79,6 +79,7 @@ body {
 
 .text-gradient:hover {
   background: none !important;
+  background-clip: text; 
   -webkit-background-clip: initial !important;
   -webkit-text-fill-color: white !important;
   color: white !important;
@@ -94,6 +95,7 @@ body {
 
 .text-gradient-black:hover {
   background: none !important;
+  background-clip: text; 
   -webkit-background-clip: initial !important;
   -webkit-text-fill-color: black !important;
   color: black !important;
@@ -123,6 +125,9 @@ body {
   border-radius: 0.5rem;
   padding: 2px; /* grosor del borde */
   background: var(--gradient-metal);
+  mask:
+  linear-gradient(#fff 0 0) content-box,
+  linear-gradient(#fff 0 0);
   -webkit-mask:
     linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
@@ -173,6 +178,9 @@ body {
   border-radius: 0.5rem;
   padding: 2px; /* grosor del borde */
   background: var(--gradient-metal);
+  mask:
+  linear-gradient(#fff 0 0) content-box,
+  linear-gradient(#fff 0 0);
   -webkit-mask:
     linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
