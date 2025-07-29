@@ -52,6 +52,9 @@ const ToolsDoubleCarousel: React.FC<ToolsDoubleCarouselProps> = ({ tools }) => {
       animationFrameId = requestAnimationFrame(animate);
     };
 
+    // ensure both carousels start at the same position
+    bottomContainer.scrollLeft = bottomScroll;
+
     animate();
 
     return () => cancelAnimationFrame(animationFrameId);

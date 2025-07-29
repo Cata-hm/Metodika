@@ -34,7 +34,7 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 ml-10">
           <img src="/favicon.ico" alt="Logo" className="h-6" />
           {/* Brand name */}
           <h1 className="text-xl font-bold tracking-wide text-gradient-nohover">
@@ -43,7 +43,7 @@ const Header = () => {
         </div>
 
         {/* Desktop menu */}
-        <nav className="hidden md:flex space-x-6 items-center">
+        <nav className="hidden md:flex space-x-6 items-center mr-10">
           <a href="#about" className={`transition ${
       isScrolled ? 'text-gradient-black' : 'text-gradient'
     }`}>
@@ -72,7 +72,7 @@ const Header = () => {
 
         {/* Mobile hamburger icon */}
         <button
-          className="md:hidden flex flex-col rounded-lg justify-center items-center gap-1"
+          className="md:hidden flex flex-col rounded-lg justify-center items-center gap-1 mr-10"
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >
