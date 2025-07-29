@@ -14,7 +14,7 @@ const Tools = () => {
         <h2 className="text-4xl md:text-5xl font-extrabold mb-8 tracking-wide bg-gradient bg-clip-text text-transparent">
           {t("tools.title")}
         </h2>
-        <p className="text-lg max-w-3xl mx-auto opacity-70 leading-relaxed">
+        <p className="text-lg max-w-3xl mx-auto leading-relaxed">
           {t("tools.subtitle")}
         </p>
 

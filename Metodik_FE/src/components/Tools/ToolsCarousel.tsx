@@ -68,9 +68,9 @@ const ToolsDoubleCarousel: React.FC<ToolsDoubleCarouselProps> = ({ tools }) => {
         {[...tools, ...tools].map((tool, idx) => (
           <motion.div
             key={`top-${idx}`}
-            className="flex flex-col items-center justify-center bg-black bg-opacity-80 backdrop-blur-md rounded-xl shadow-[0_0_15px_#a78bfa] cursor-pointer p-4 min-w-[140px] text-gradient-nohover"
+            className="flex flex-col items-center justify-center bg-black bg-opacity-80 backdrop-blur-md rounded-xl shadow-[0_0_15px_#a78bfa] cursor-default p-4 min-w-[140px] text-gradient-nohover"
             whileHover={{ 
-            scale: 1.2, 
+            scale: 0.8, 
             boxShadow: "0 0 20px #000000", 
             backgroundColor: "#F1F5F9" 
           }}
@@ -93,9 +93,9 @@ const ToolsDoubleCarousel: React.FC<ToolsDoubleCarouselProps> = ({ tools }) => {
         {[...tools, ...tools].map((tool, idx) => (
           <motion.div
             key={`bottom-${idx}`}
-            className="flex flex-col items-center justify-center bg-black bg-opacity-80 backdrop-blur-md rounded-xl shadow-[0_0_15px_rgba(74,144,226,0.8)] cursor-pointer p-4 min-w-[140px] text-gradient-nohover"
+            className="flex flex-col items-center justify-center bg-black bg-opacity-80 backdrop-blur-md rounded-xl shadow-[0_0_15px_rgba(74,144,226,0.8)] cursor-default p-4 min-w-[140px] text-gradient-nohover"
             whileHover={{ 
-            scale: 1.2, 
+            scale: 0.8, 
             boxShadow: "0 0 20px #000000", 
             backgroundColor: "#F1F5F9" 
           }}

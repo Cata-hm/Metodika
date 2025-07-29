@@ -1,6 +1,6 @@
 // src/components/Hero.tsx
 // This component renders the hero section of the Metodika application, including a title, subtitle, and call-to-action button
-import { useRef, useEffect } from 'react';
+import { useRef, } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
