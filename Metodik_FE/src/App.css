@@ -2,7 +2,7 @@
 /* Global styles for Metodika with dark theme and iridescent metallic highlights */
 
 :root {
-  --gradient-metal: linear-gradient(to right, #a78bfa, #ec4899, #60a5fa);
+  --gradient-metal: linear-gradient(to right, #60a5fa, #ec4899, #a78bfa);
   --bg-dark: #000000;
   --text-metallic: #d1d5db;
 }
@@ -20,7 +20,7 @@ body {
   text-align: center;
 }
 
-/* Logo Styles */
+/* Logo Styles ---------------------------------------*/
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -51,7 +51,7 @@ body {
   }
 }
 
-/* Cards */
+/* Cards --------------------------------------------------*/
 .card {
   padding: 2em;
   background-color: #111827; /* slightly lighter than black */
@@ -70,7 +70,7 @@ body {
   color: transparent;
 }
 
-/* Gradient text utility */
+/* Gradient text utility ---------------------------------*/
 .text-gradient {
   background: linear-gradient(to right, #60a5fa, #ec4899, #a78bfa);
   background-clip: text;
