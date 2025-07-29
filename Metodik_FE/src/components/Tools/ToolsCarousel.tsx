@@ -63,7 +63,7 @@ const ToolsDoubleCarousel: React.FC<ToolsDoubleCarouselProps> = ({ tools }) => {
       <div
         ref={topRef}
         className="w-screen hide-scrollbar flex space-x-10 overflow-x-auto px-6 py-6"
-        style={{ scrollBehavior: "smooth", minHeight: "140px" }}
+        style={{ minHeight: "140px" }}
       >
         {[...tools, ...tools].map((tool, idx) => (
           <motion.div
@@ -88,7 +88,7 @@ const ToolsDoubleCarousel: React.FC<ToolsDoubleCarouselProps> = ({ tools }) => {
       <div
         ref={bottomRef}
         className="w-screen hide-scrollbar flex space-x-10 overflow-x-auto px-6 py-6"
-        style={{ scrollBehavior: "smooth", minHeight: "140px" }}
+        style={{ minHeight: "140px" }}
       >
         {[...tools, ...tools].map((tool, idx) => (
           <motion.div
