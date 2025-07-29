@@ -79,9 +79,9 @@ body {
 
 .text-gradient:hover {
   background: none !important;
-  background-clip: text; 
   -webkit-background-clip: initial !important;
   -webkit-text-fill-color: white !important;
+  background-clip: text; 
   color: white !important;
 }
 
@@ -95,9 +95,9 @@ body {
 
 .text-gradient-black:hover {
   background: none !important;
-  background-clip: text; 
   -webkit-background-clip: initial !important;
   -webkit-text-fill-color: black !important;
+  background-clip: text; 
   color: black !important;
 }
 
@@ -111,9 +111,9 @@ body {
   background: transparent;
   color: transparent; /* texto transparente para gradiente */
   background-image: var(--gradient-metal);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
   transition: all 0.3s ease;
   z-index: 0;
 }
@@ -125,6 +125,7 @@ body {
   border-radius: 0.5rem;
   padding: 2px; /* grosor del borde */
   background: var(--gradient-metal);
+  mask-composite: exclude;
   mask:
   linear-gradient(#fff 0 0) content-box,
   linear-gradient(#fff 0 0);
@@ -132,7 +133,6 @@ body {
     linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out;
-  mask-composite: exclude;
   pointer-events: none;
   z-index: -1;
   transition: all 0.3s ease;
@@ -142,8 +142,8 @@ body {
   color: black; /* texto negro en hover */
   background-image: none;
   -webkit-text-fill-color: initial;
-  background-clip: initial;
   -webkit-background-clip: initial;
+  background-clip: initial;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   background-color: black; /* fondo negro en hover */
 }
@@ -164,9 +164,9 @@ body {
   border: none;
   color: transparent; /* texto transparente para gradiente */
   background-image: var(--gradient-metal);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
   transition: all 0.3s ease;
   z-index: 0;
 }
@@ -178,6 +178,7 @@ body {
   border-radius: 0.5rem;
   padding: 2px; /* grosor del borde */
   background: var(--gradient-metal);
+  mask-composite: exclude;
   mask:
   linear-gradient(#fff 0 0) content-box,
   linear-gradient(#fff 0 0);
@@ -185,7 +186,6 @@ body {
     linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out;
-  mask-composite: exclude;
   pointer-events: none;
   z-index: -1;
   transition: all 0.3s ease;
