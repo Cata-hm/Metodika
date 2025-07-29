@@ -8,19 +8,21 @@ const About = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="about" className="py-16 px-6 bg-gray-100 text-black">
-      <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-10">
-        <div className=" rounded-full p-1 bg-gradient">
-          <motion.img
-            src="/images/profile.JPG"
-            alt="Catalina Hernández"
-            className="w-full h-full rounded-full object-cover shadow-lg"
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.8, ease: 'easeOut' }}
-          />
-        </div>
+     <section id="about" className="py-16 px-6 bg-gray-100 text-black">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-10">
+        
+        {/* Nueva imagen rectangular */}
+        <motion.img
+          src="/images/profile2.jpg"
+          alt="Catalina Hernández"
+          className="w-full max-w-sm rounded-2xl shadow-xl object-cover bg-gradient"
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.8, ease: 'easeOut' }}
+        />
+
+        {/* Text content */}
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
