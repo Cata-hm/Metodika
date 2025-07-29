@@ -32,13 +32,13 @@ const About = () => {
             {t('about.title')}
           </h3>
           <p className="text-lg leading-relaxed text-metallic text-justify">
-            <Trans i18nKey="about.paragraph1" values={{ name: 'Catalina Hernández Mejía' }} components={{ strong: <strong className="font-semibold text-gradient" /> }} />
+            <Trans i18nKey="about.paragraph1" values={{ name: 'Catalina Hernández Mejía' }} components={{ strong: <strong className="font-semibold text-gradient-nohover" /> }} />
           </p>
           <p className="text-lg leading-relaxed mt-4 text-metallic text-justify">
             {t('about.paragraph2')}
           </p>
           <p className="text-lg leading-relaxed mt-4 text-metallic text-justify">
-            <Trans i18nKey="about.paragraph3" values={{ name: BRAND_NAME }} components={{ strong: <strong className="font-semibold text-gradient" /> }} />
+            <Trans i18nKey="about.paragraph3" values={{ name: BRAND_NAME }} components={{ strong: <strong className="font-semibold text-gradient-nohover" /> }} />
           </p>
           <p className="text-lg leading-relaxed mt-4 text-metallic text-justify">
             {t('about.paragraph4')}

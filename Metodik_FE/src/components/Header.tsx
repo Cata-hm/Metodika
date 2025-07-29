@@ -20,7 +20,7 @@ const Header = () => {
   // 🧠 Scroll effect to detect if page is scrolled
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10); // Cambia a blanco si baja más de 10px
+      setIsScrolled(window.scrollY > 500); // Cambia a blanco si baja más de 500px
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -33,7 +33,7 @@ const Header = () => {
         isScrolled ? 'bg-gray-100' : 'bg-black'
       }`}
     >
-      <div className="container mx-auto px-15 py-4 flex justify-between items-center">
+      <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <div className="flex items-center gap-2">
           <img src="/favicon.ico" alt="Logo" className="h-6" />
           {/* Brand name */}

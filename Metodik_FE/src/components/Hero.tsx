@@ -1,6 +1,6 @@
 // src/components/Hero.tsx
 // This component renders the hero section of the Metodika application, including a title, subtitle, and call-to-action button
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
@@ -14,10 +14,14 @@ const Hero = () => {
     visible: { opacity: 1, y: 0 }
   };
 
+  useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
+
   return (
     <section
       ref={ref}
-      className="w-full bg-gradient text-black min-h-screen flex flex-col justify-center items-center text-center py-24 px-6"
+      className="w-full bg-gradient text-black min-h-screen flex flex-col justify-center items-center text-center px-6"
     >
       <motion.h2
         className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 leading-tight drop-shadow-md"

@@ -4,8 +4,14 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import MetodikaRouter from './routes/MetodikaRouter';
 import AdminRouter from './routes/AdminRouter';
+import { useEffect } from 'react';
 
 function App() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <BrowserRouter>
       <Routes>
