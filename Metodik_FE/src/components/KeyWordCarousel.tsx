@@ -13,7 +13,7 @@ const KeywordCarousel = () => {
     const container = containerRef.current;
     if (!container) return;
 
-    const scrollSpeed = 1.9; // velocidad de desplazamiento
+    const scrollSpeed = 2; // velocidad de desplazamiento
      let animationFrameId: number;
 
     const step = () => {
