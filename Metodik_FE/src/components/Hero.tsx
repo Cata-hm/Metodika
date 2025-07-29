@@ -14,10 +14,6 @@ const Hero = () => {
     visible: { opacity: 1, y: 0 }
   };
 
-  useEffect(() => {
-  window.scrollTo(0, 0);
-}, []);
-
   return (
     <section
       ref={ref}

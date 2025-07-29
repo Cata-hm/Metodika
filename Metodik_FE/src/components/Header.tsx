@@ -20,7 +20,7 @@ const Header = () => {
   // 🧠 Scroll effect to detect if page is scrolled
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 500); // Cambia a blanco si baja más de 500px
+      setIsScrolled(window.scrollY > 10); // Cambia a blanco si baja más de 10px
     };
 
     window.addEventListener('scroll', handleScroll);
