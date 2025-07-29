@@ -19,7 +19,7 @@ const Footer = () => {
         — {t('footer.rights')}
       </p>
       <p className="text-white font-medium flex justify-center items-center gap-1 select-text">
-        Designed & Managed with passion{' '}
+        {t('footer.designed')}{' '}
         <span role="img" aria-label="heart" className="drop-shadow-[0_0_6px_rgba(255,255,255,0.7)]">
           ❤️
         </span>

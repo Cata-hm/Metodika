@@ -33,11 +33,14 @@ const Header = () => {
         isScrolled ? 'bg-gray-100' : 'bg-black'
       }`}
     >
-      <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        {/* Brand name */}
-        <h1 className="text-xl font-bold tracking-wide text-gradient-nohover">
-          {BRAND_NAME}
-        </h1>
+      <div className="container mx-auto px-15 py-4 flex justify-between items-center">
+        <div className="flex items-center gap-2">
+          <img src="/favicon.ico" alt="Logo" className="h-6" />
+          {/* Brand name */}
+          <h1 className="text-xl font-bold tracking-wide text-gradient-nohover">
+            {BRAND_NAME}
+          </h1>
+        </div>
 
         {/* Desktop menu */}
         <nav className="hidden md:flex space-x-6 items-center">

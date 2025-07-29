@@ -31,16 +31,16 @@ const About = () => {
           <h3 className="text-4xl md:text-5xl font-extrabold mb-8 tracking-wide bg-gradient bg-clip-text text-transparent">
             {t('about.title')}
           </h3>
-          <p className="text-lg leading-relaxed text-metallic">
+          <p className="text-lg leading-relaxed text-metallic text-justify">
             <Trans i18nKey="about.paragraph1" values={{ name: 'Catalina Hernández Mejía' }} components={{ strong: <strong className="font-semibold text-gradient" /> }} />
           </p>
-          <p className="text-lg leading-relaxed mt-4 text-metallic">
+          <p className="text-lg leading-relaxed mt-4 text-metallic text-justify">
             {t('about.paragraph2')}
           </p>
-          <p className="text-lg leading-relaxed mt-4 text-metallic">
+          <p className="text-lg leading-relaxed mt-4 text-metallic text-justify">
             <Trans i18nKey="about.paragraph3" values={{ name: BRAND_NAME }} components={{ strong: <strong className="font-semibold text-gradient" /> }} />
           </p>
-          <p className="text-lg leading-relaxed mt-4 text-metallic">
+          <p className="text-lg leading-relaxed mt-4 text-metallic text-justify">
             {t('about.paragraph4')}
           </p>
         </motion.div>

@@ -54,7 +54,7 @@ const Services = () => {
       className="bg-gray-100 py-24 px-6 text-white"
     >
       <div className="max-w-6xl mx-auto text-center">
-        <h3 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-blue-400 mb-16 tracking-tight">
+        <h3 className="text-4xl md:text-5xl font-extrabold mb-16 tracking-tight bg-gradient bg-clip-text text-transparent">
           {t('services.title')}
         </h3>
 
@@ -65,25 +65,22 @@ const Services = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
         >
-          {servicesData.map(({ titleKey, descriptionKey, borderColor }, index) => (
+          {servicesData.map(({ titleKey, descriptionKey }, index) => (
             <motion.div
               key={index}
               variants={itemVariants}
-              className="relative group p-[2px] rounded-3xl bg-gradient-to-tr 
-                         from-slate-700 to-slate-800 hover:from-slate-600 hover:to-slate-700 
-                         shadow-[0_0_20px_rgba(255,255,255,0.05)]"
+              className="relative group p-[2px] rounded-3xl 
+                         bg-gradient-to-tr from-[#a78bfa] via-[#ec4899] to-[#60a5fa] 
+                         shadow-[0_0_15px_rgba(167,139,250,0.3)] hover:shadow-[0_0_25px_rgba(167,139,250,0.5)] transition-shadow duration-300"
             >
-              <div className="bg-[#0a0a0a] rounded-3xl p-6 md:p-8 h-full">
-                <h4 className="text-xl md:text-2xl font-semibold text-white mb-4">
+              <div className="bg-black rounded-3xl p-8 h-full">
+                <h4 className="text-xl md:text-2xl font-extrabold mb-4 bg-gradient bg-clip-text text-transparent">
                   {t(titleKey)}
                 </h4>
-                <p className="text-gray-300 text-sm md:text-base leading-relaxed">
+                <p className="text-gray-300 text-base leading-relaxed">
                   {t(descriptionKey)}
                 </p>
               </div>
-              <div
-                className={`absolute inset-0 rounded-3xl z-0 opacity-10 blur-xl bg-gradient-to-tr ${borderColor}`}
-              />
             </motion.div>
           ))}
         </motion.div>

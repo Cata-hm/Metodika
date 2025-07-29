@@ -65,14 +65,14 @@ body {
 
 /* Gradient text utility without hover */
 .text-gradient-nohover {
-  background: linear-gradient(to right, #a78bfa, #ec4899, #60a5fa);
+  background: linear-gradient(to right, #60a5fa, #ec4899, #a78bfa);
   background-clip: text;
   color: transparent;
 }
 
 /* Gradient text utility */
 .text-gradient {
-  background: linear-gradient(to right, #a78bfa, #ec4899, #60a5fa);
+  background: linear-gradient(to right, #60a5fa, #ec4899, #a78bfa);
   background-clip: text;
   color: transparent;
 }
@@ -85,7 +85,7 @@ body {
 }
 
 .text-gradient-black {
-  background: linear-gradient(to right, #a78bfa, #ec4899, #60a5fa);
+  background: linear-gradient(to right, #60a5fa, #ec4899, #a78bfa);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -200,7 +200,7 @@ body {
 
 /* Background gradient utility --------------------------------------------*/
 .bg-gradient {
-  background-image: linear-gradient(to right, #8b5cf6, #ec4899, #60a5fa);
+  background-image: linear-gradient(to right, #60a5fa, #ec4899, #a78bfa);
 }
 
 /* Button styling ---------------------------------------------------------*/
